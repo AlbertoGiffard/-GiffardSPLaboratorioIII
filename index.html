@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Alberto G.</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/archivos.js"></script>
+    <script src="./js/personas.js"></script>
+    <script src="./js/clientes.js"></script>
+</head>
+
+<body>
+    <div class="loadingPage" id="load"><div class="preloader"></div></div>
+    <div id="formTwo">
+        <form>
+            <!-- <input class="exitForm" type="button" value="X" id="exit"> -->
+            <div class="divTitleForm">
+                <span class="titleForm">
+                    ABM Personas
+                </span>
+            </div>
+            <hr>
+            <div class="fieldFormTwo">
+                <div class="divTextForm">
+                    <span>
+                        Id:
+                    </span>
+                </div>
+                <div class="divInputForm">
+                    <input class="inputFormTwo" type="text" id="idForm">
+                </div>
+            </div>
+            <div class="fieldFormTwo">
+                <div class="divTextForm">
+                    <span>
+                        Nombre:
+                    </span>
+                </div>
+                <div class="divInputForm">
+                    <input class="inputFormTwo" type="text" id="nameForm">
+                </div>
+            </div>
+            <div class="fieldFormTwo">
+                <div class="divTextForm">
+                    <span>
+                        Apellido:
+                    </span>
+                </div>
+                <div class="divInputForm">
+                    <input class="inputFormTwo" type="text" id="lastNameForm">
+                </div>
+            </div>
+            <div class="fieldFormTwo">
+                <div class="divTextForm">
+                    <span>
+                        Edad:
+                    </span>
+                </div>
+                <div class="divInputForm">
+                    <input class="inputFormTwo" type="text" id="ageForm">
+                </div>
+            </div>
+            <br>
+            <div class="fieldFormTwo">
+                <div class="divTextForm">
+                    <span>
+                        Sexo:
+                    </span>
+                </div>
+                <div class="divInputForm">
+                    <select id="genderForm" class="selectOptions" name="genderList">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div class="divBtnForm">
+                <input class="btnSecond btnCloseForm" type="button" value="Eliminar" id="removeBtn" >
+                <input class="btnSecond btnAddForm" type="button" value="Agregar" id="addNew" >
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div id="secondPresentation">
+        <!-- <div class="divNew">
+            <input class="btnSecond btnNew" type="button" value="Alta" id="new" >
+        </div>
+        <hr>
+         --><div class="divTitleForm">
+            <span class="titleForm">
+                Filtros
+            </span>
+        </div>
+        <hr>
+        <div class="divFilters">
+            <div class="space spaceText">
+                <p>
+                    Filtrar por:
+                </p>
+            </div>
+            <div class="space spaceSelect">
+                <select id="filterSelect" class="selectOptions">
+                    <option>Todos</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="space spaceText">
+                <p>
+                    Promedio de edad:
+                </p>
+            </div>
+            <div class="space spaceInput">
+                <input class="inputSpace" type="text" id="avgFilter">
+            </div>
+            <div class="space spaceBtn">
+                <input class="btnSecond btnFilter" type="button" value="Calcular Promedio" id="filterBtn">
+            </div>
+            <div class="space spaceBtn">
+                <input class="btnSecond btnClean" type="button" value="Limpiar tabla" id="cleanBtn">
+            </div>
+        </div>
+        <hr>
+        <div class="divTitleForm">
+            <span class="titleForm">
+                Campos a mostrar
+            </span>
+        </div>
+        <hr>        
+        <div class="fieldsDiv">
+            <input type="checkbox" name="field" id="idCheck" class="checkboxes" checked>Id</input>
+            <input type="checkbox" name="field" id="nombreCheck" class="checkboxes" checked>Nombre</input>
+            <input type="checkbox" name="field" id="apellidoCheck" class="checkboxes" checked>Apellido</input>
+            <input type="checkbox" name="field" id="edadCheck" class="checkboxes" checked>Edad</input>
+            <input type="checkbox" name="field" id="sexoCheck" class="checkboxes" checked>Sexo</input>
+        </div>
+        <hr>
+        <div class="divTitleForm">
+            <span class="titleForm">
+                Lista de Personas
+            </span>
+        </div>
+        <hr>
+    </div>
+    <div id="container">
+    </div>
+</body>
+
+</html>
