@@ -2,7 +2,8 @@ class Cliente extends Persona{
     sexo = null;
     edad = null;
 
-    constructor(sexo, edad){
+    constructor(id, nombre, apellido, sexo, edad){
+        super(id, nombre, apellido);
         this.sexo = sexo||"";
         this.edad = edad||0;
     }

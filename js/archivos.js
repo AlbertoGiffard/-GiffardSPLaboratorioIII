@@ -546,7 +546,7 @@ AddNew = () => {
     persona.edad = parseInt(Id("ageForm").value);
     persona.sexo = Id("genderForm").value; */
 
-    CreateRowWithParameters(cliente.id, cliente.nombre, cliente.apellido, cliente.edad, cliente.sexo);
+    CreateRowWithParameters(cliente.id, cliente.nombre, cliente.apellido, cliente.sexo, cliente.edad);
 
     originalData.push(cliente);
 }
