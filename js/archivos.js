@@ -657,6 +657,14 @@ DeleteBtn = () => {
         if (IdExistInTable(idRow)) {
             var row = Id(idRow);
             table.removeChild(row);
+
+            for( var i = 0; i < originalData.length; i++){ 
+                                   
+                if ( originalData[i].id == idRow) { 
+                    originalData.splice(i, 1); 
+                    break;
+                }
+            }
             //si no hay mas filas elimina la tabla
             if (table.rows.length <= 0) {
                 let container = Id("container");
