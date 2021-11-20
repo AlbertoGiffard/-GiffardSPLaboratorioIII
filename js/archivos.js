@@ -539,7 +539,7 @@ Validations = () => {
 
 AddNew = () => {
     var cliente = new Cliente();
-    cliente.SetearValores(Cliente.LastId(), Id("nameForm").value, Id("lastNameForm").value, Id("ageForm").value, Id("genderForm").value);
+    cliente.SetearValores(Cliente.LastId(), Id("nameForm").value, Id("lastNameForm").value, Id("genderForm").value, Id("ageForm").value);
     /* persona.id = LastId();
     persona.nombre = Id("nameForm").value;
     persona.apellido = Id("lastNameForm").value;
